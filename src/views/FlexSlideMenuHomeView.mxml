@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="HomeView" actionBarVisible="false">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	
+		<s:VGroup height="100%" id="nav"  depth="4" width="100%" gap="0">		
+			<s:ActionBar width="100%"  >
+				<s:navigationContent >
+					<s:HGroup paddingLeft="8">
+						<s:Image  left="-1" height="35" width="35" id="menuBtn" source="/assets/menuButton.png"/>
+					</s:HGroup>
+				</s:navigationContent>		
+			</s:ActionBar>
+			
+			<s:Group width="100%" height="100%">
+				<s:Rect height="100%" width="100%">
+					<s:fill>
+						<s:SolidColor color="gray"/>
+					</s:fill>
+				</s:Rect>
+				<s:Label  id="labelDisplay"  fontSize="30"/>
+			</s:Group>
+		</s:VGroup>	
+	
+	
+	<s:List width="90%"   id="menuList" height="100%" depth="0" labelField="name"  >
+		<s:dataProvider>
+			<s:ArrayCollection>
+				<fx:Object name="Menu Item 1"/>
+				<fx:Object name="Menu Item 2"/>
+				<fx:Object name="Menu Item 3"/>
+				<fx:Object name="Menu Item 4"/>
+			</s:ArrayCollection>
+		</s:dataProvider>
+	</s:List>
+</s:View>
