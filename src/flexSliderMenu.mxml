@@ -2,12 +2,15 @@
 <s:ViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
 							xmlns:s="library://ns.adobe.com/flex/spark"     
                             xmlns:context="context.*" 
-                            firstView="views.FlexSlideMenuHomeView" 
+                            firstView="views.FlexSlideMenuHomeView"
+                            xmlns:utils="utils.*" 
+                            runtimeDPIProvider="utils.CustomRuntimeDPIProvider"  
                             applicationDPI="160">
     
     
     <fx:Declarations>
         <context:MobileContext contextView="{this}"/>
+        <utils:StatesUtil target="{this}"/>
     </fx:Declarations>
 	
 </s:ViewNavigatorApplication>
